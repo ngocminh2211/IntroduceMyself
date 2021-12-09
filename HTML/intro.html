@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Introduce</title>
+        <link rel="stylesheet" href="../CSS/intro.css">
+        <!--Link Bootstrap-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <!--Link gg Fonts -->
+        <!--Fonts Rubik-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Rubik&display=swap" rel="stylesheet">
+    </head>
+    <body style="background: #FCD8D4;">
+        <div class="wrapper">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-2">
+                        <br><br><br><br>
+                        <div class="introMinh1" id="introMinh1">Hi! I'm normal mode.</div>
+                    </div>
+                    <div class="col-md-2">
+                        <br><br><br><br><br><br><br>
+                        <img src="../image/Level1.png" alt="" class="minh1"  id="minh1" onmouseenter="mouseEnter1()" onmouseleave="mouseLeave1()">
+                    </div>
+                    <div class="col-md-4">
+                        <br>
+                        <button class="custom-btn btn-welcome" onclick="window.location.href='../HTML/transitionLevel.html'"><span>WELCOME <span style="font-size: 30px;">♥</span></span></button>
+                        <br><br>
+                        <img src="../image/pinkDoor.png" alt="" class="hinhAnh">
+                    </div>
+                    <div class="col-md-2">
+                        <br><br><br><br><br><br><br><br><br><br><br>
+                        <div class="introMinh2" id="introMinh2">Hi! I'm serious mode.</div>
+                        <img src="../image/Level2.png" alt="" style="width:180px" id="minh2" onmouseenter="mouseEnter2()" onmouseleave="mouseLeave2()">
+                    </div>
+                    <div class="col-md-2">
+                        <br><br><br><br><br>
+                        <div class="introMinh3" id="introMinh3">Hi! I'm sensitive mode.</div>
+                        <img src="../image/Level3.png" alt="" id="minh3" onmouseenter="mouseEnter3()" onmouseleave="mouseLeave3()">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
+
+<script>
+
+    function mouseEnter1() {
+     document.getElementById("introMinh1").style.display = 'block'
+     
+    }
+
+    function mouseLeave1() {
+        document.getElementById("introMinh1").style.display = 'none'
+    }
+
+    function mouseEnter2() {
+     document.getElementById("introMinh2").style.display = 'block'
+     
+    }
+
+    function mouseLeave2() {
+        document.getElementById("introMinh2").style.display = 'none'
+    }
+
+    function mouseEnter3() {
+     document.getElementById("introMinh3").style.display = 'block'
+     
+    }
+
+    function mouseLeave3() {
+        document.getElementById("introMinh3").style.display = 'none'
+    }
+</script>
